@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="form_container">
+        <div class="overlay">
+
+        </div>
+
+        <div class="titleDiv">
+            <h1 class="title">Login</h1>
+            <span class="subTitle">Welcome back!</span>
+        </div>
+
+        <form action="" method="" onsubmit="postData(event)">
+            <div class="rows grid">
+                <span id="err-login" class="error">Kindly check your login</span>
+                <div class="row">
+                        <label for="email" >Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter Email" required>
+                    </div>
+                    <div class="row">
+                        <label for="password" >Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+                    </div>
+                    <div class="row"> 
+                        <input type="submit" id="submitBtn" name="submit" value="Login" required>
+                        <span class="registerLink">Don't have an account? <a href="register.html">Register</a></span>
+                    </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+<script src="./js/login.js"></script>
+</html>
